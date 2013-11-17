@@ -43,3 +43,9 @@ while (currentNumber <= 12) {
 		   if (counter % 3 == 0 && counter % 4 == 0)
 		       alert(counter);
 		       }
+		       for (var counter = 0; counter < 20; counter++) {
+		         if (counter % 4 == 0)
+			     alert(counter);
+			       if (counter % 4 != 0)
+			           alert("(" + counter + ")");
+				   }
