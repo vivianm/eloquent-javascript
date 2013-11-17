@@ -29,11 +29,11 @@ while (currentNumber <= 12) {
        for (var counter = 0; counter < 10; counter = counter + 1)
          result = result * 2;
 	 alert(result);
-	   var line = "";
-	   var counter = 0;
-	   while (counter < 10) {
-	     line = line + "#";
-	       alert(line);
+	var line = "";
+	for (var counter = 0; counter < 10; counter = counter + 1) {
+	  line = line + "#";
+	    alert(line);
+	    }
 	       for (var number = 0; number <= 12; number = number + 2)
 	         alert(number);
 	         counter = counter + 1;
