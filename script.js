@@ -11,3 +11,4 @@ alert("Avocados");
 alert(Math.max(2, 4));
 alert(Math.min(2, 4) + 100);
 alert(confirm("Shall we, then?"));
+alert(prompt("Tell us everything you know.", "..."));
