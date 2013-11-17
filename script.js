@@ -32,3 +32,10 @@ while (currentNumber <= 12) {
 	   counter = counter + 1;
 	   }
 	   alert(result);
+	   var line = "";
+	   var counter = 0;
+	   while (counter < 10) {
+	     line = line + "#";
+	       print(line);
+	         counter = counter + 1;
+		 }
