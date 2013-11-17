@@ -38,6 +38,6 @@ while (currentNumber <= 12) {
 	     line = line + "#";
 	       alert(line);
 	       for (var number = 0; number <= 12; number = number + 2)
-	         show(number);
+	         alert(number);
 	         counter = counter + 1;
 		 }
