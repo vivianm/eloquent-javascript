@@ -15,3 +15,8 @@ alert(prompt("Tell us everything you know.", "..."));
 var theNumber = Number(prompt("Pick a number", ""));
 alert("Your number is the square root of " +
       (theNumber * theNumber));
+var currentNumber = 0;
+while (currentNumber <= 12) {
+  alert(currentNumber);
+    currentNumber = currentNumber + 2;
+    }
