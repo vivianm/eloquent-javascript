@@ -7,3 +7,4 @@ while (count <= 10) {
 
 var caught = 5 * 5;
 alert("Result of 5 * 5 is \n" + caught);
+alert("Avocados");
