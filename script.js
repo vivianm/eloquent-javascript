@@ -46,6 +46,6 @@ while (currentNumber <= 12) {
 		       for (var counter = 0; counter < 20; counter++) {
 		         if (counter % 4 == 0)
 			     alert(counter);
-			       if (counter % 4 != 0)
+			       else
 			           alert("(" + counter + ")");
 				   }
