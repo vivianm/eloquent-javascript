@@ -19,4 +19,9 @@ var currentNumber = 0;
 while (currentNumber <= 12) {
   alert(currentNumber);
     currentNumber = currentNumber + 2;
-    }
+   }
+   var currentNumber = 0;
+   while (currentNumber <= 12) {
+     alert(currentNumber);
+       currentNumber = currentNumber + 2;
+       }
