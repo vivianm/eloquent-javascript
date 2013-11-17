@@ -50,4 +50,7 @@ while (currentNumber <= 12) {
 			           alert(counter + "*");
 				     else
 				         alert(counter);
-					 }
+	
+	}
+	for (var current = 20; current % 7 != 0; current++);
+	  alert(current);
