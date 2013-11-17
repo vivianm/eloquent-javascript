@@ -33,8 +33,13 @@ while (currentNumber <= 12) {
 	for (var counter = 0; counter < 10; counter = counter + 1) {
 	  line = line + "#";
 	    alert(line);
+
 	    }
 	       for (var number = 0; number <= 12; number = number + 2)
 	         alert(number);
 	         counter = counter + 1;
 		 }
+		 for (var counter = 0; counter < 20; counter++) {
+		   if (counter % 3 == 0 && counter % 4 == 0)
+		       alert(counter);
+		       }
