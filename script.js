@@ -12,3 +12,6 @@ alert(Math.max(2, 4));
 alert(Math.min(2, 4) + 100);
 alert(confirm("Shall we, then?"));
 alert(prompt("Tell us everything you know.", "..."));
+var theNumber = Number(prompt("Pick a number", ""));
+alert("Your number is the square root of " +
+      (theNumber * theNumber));
