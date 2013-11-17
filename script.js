@@ -6,3 +6,4 @@ while (count <= 10) {
     alert("Total of numbers incrementing by one from 1 to 10 is " + total);
 
 var caught = 5 * 5;
+alert("Result of 5 * 5 is \n" + caught);
