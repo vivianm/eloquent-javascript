@@ -31,4 +31,4 @@ while (currentNumber <= 12) {
          result = result * 2;
 	   counter = counter + 1;
 	   }
-	   show(result);
+	   alert(result);
