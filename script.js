@@ -418,3 +418,6 @@ function findLivingCats() {
 		alert("There are ", howMany, " cats.");
 		var when = new Date(1980, 1, 1);
 		alert(when);
+		alert(new Date());
+		alert(new Date(1980, 1, 1));
+		alert(new Date(2007, 2, 30, 8, 20, 30));
