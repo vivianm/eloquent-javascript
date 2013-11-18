@@ -58,3 +58,12 @@ function add(a, b) {
 					  }
 
 					 test();
+var variable = "top-level";
+function parentFunction() {
+  var variable = "local";
+    function childFunction() {
+        alert(variable);
+	  }
+	    childFunction();
+	    }
+	    parentFunction();
