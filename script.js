@@ -429,3 +429,9 @@ function findLivingCats() {
 			    alert("Day of week: ", today.getDay());
 			    var today = new Date();
 			    alert(today.getTime());
+			    var wallFall = new Date(1989, 10, 9);
+			    var gulfWarOne = new Date(1990, 6, 2);
+			    alert(wallFall < gulfWarOne);
+			    alert(wallFall == wallFall);
+			    // but
+			    alert(wallFall == new Date(1989, 10, 9));
