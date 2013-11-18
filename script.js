@@ -323,3 +323,5 @@ for (var i = 0; i < mailArchive.length; i++) {
       }
       var words = "Cities of the Interior";
       alert(words.split(" "));
+      var array = ["a", "b", "c d"];
+      alert(array.join(" ").split(" "));
