@@ -78,3 +78,7 @@ while (currentNumber <= 12) {
 	 // ... mystery code that might put a string into maybeNull ...
 			     if (maybeNull)
 			       print("maybeNull has a value");
+alert("Apollo" + 5);
+alert(null + "ify");
+alert("5" * 5);
+alert("strawberry" * 5);
