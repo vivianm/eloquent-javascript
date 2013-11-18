@@ -64,3 +64,5 @@ while (currentNumber <= 12) {
 			  else
 			      alert("You're an embarrassment.");
 			      }
+			      var mysteryVariable;
+			      alert(mysteryVariable);
