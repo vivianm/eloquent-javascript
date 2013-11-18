@@ -274,5 +274,14 @@ function greaterThan(x) {
  delete set["Spot"];
  // See if "Asoka" is in the set
  alert("Asoka" in set);
+var object1 = {value: 10};
+var object2 = object1;
+var object3 = {value: 10};
 
+alert(object1 == object2);
+alert(object1 == object3);
+
+object1.value = 15;
+alert(object2.value);
+alert(object3.value);
 
