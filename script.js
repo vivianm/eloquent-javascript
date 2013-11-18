@@ -335,3 +335,10 @@ for (var i = 0; i < mailArchive.length; i++) {
 	     alert(startsWith("rotation", "rot"));
 	     alert("Pip".charAt(250));
 	     alert("Nop".slice(1, 10));
+	     function catNames(paragraph) {
+	       var colon = paragraph.indexOf(":");
+	         return paragraph.slice(colon + 2).split(", ");
+		 }
+
+		 alert(catNames("born 20/09/2004 (mother Yellow Bess): " +
+		               "Doctor Hobbles the 2nd, Noog"));
