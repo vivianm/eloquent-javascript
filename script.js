@@ -321,3 +321,5 @@ for (var i = 0; i < mailArchive.length; i++) {
     alert("Processing e-mail #", i);
       // Do more things...
       }
+      var words = "Cities of the Interior";
+      alert(words.split(" "));
