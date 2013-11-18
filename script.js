@@ -123,3 +123,4 @@ function greaterThan(x) {
 
 	var greaterThanTen = greaterThan(10);
 	alert(greaterThanTen(9));
+	alert("Hello", "Good Evening", "How do you do?", "Goodbye");
