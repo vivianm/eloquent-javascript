@@ -67,3 +67,9 @@ function parentFunction() {
 	    childFunction();
 	    }
 	    parentFunction();
+	    var something = 1;
+	    {
+	      var something = 2;
+	        alert("Inside: " + something);
+		}
+		alert("Outside: " + something);
