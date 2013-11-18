@@ -379,3 +379,17 @@ for (var cat in livingCats)
 	  for (var i = 0; i < values.length; i++)
 	      delete set[values[i]];
 	      }
+	      var livingCats = {Spot: true};
+
+	      for (var mail = 0; mail < mailArchive.length; mail++) {
+	        var paragraphs = mailArchive[mail].split("\n");
+		  for (var paragraph = 0;
+		         paragraph < paragraphs.length;
+			        paragraph++) {
+	if (startsWith(paragraphs[paragraph], "born"))
+ addToSet(livingCats, catNames(paragraphs[paragraph]));
+else if (startsWith(paragraphs[paragraph], "died"))
+	removeFromSet(livingCats, catNames(paragraphs[paragraph]));
+						        
+						    }
+						      }
