@@ -63,4 +63,14 @@ while (currentNumber <= 12) {
 		        alert("Almost!");
 			  else
 			      alert("You're an embarrassment.");
-			      }
+	
+	}
+	// The variable counter, which is about to be defined, is going
+	// to start with a value of 0, which is zero.
+	var counter = 0;
+	// Now, we are going to loop, hold on to your hat.
+	while (counter < 100 /* counter is less than one hundred */)
+	/* Every time we loop, we INCREMENT the value of counter,
+	   Seriously, we just add one to it. */
+	     counter++;
+	     // And then, we are done.
