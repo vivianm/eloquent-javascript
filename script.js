@@ -67,3 +67,6 @@ while (currentNumber <= 12) {
 			      var mysteryVariable;
 			      alert(mysteryVariable);
 			      alert(alert("I am a side effect."));
+			     alert(false == 0);
+			     alert("" == 0);
+			     alert("5" == 5);
