@@ -255,3 +255,6 @@ function greaterThan(x) {
  delete cat.size;
  alert(cat.size);
  alert(cat);
+ var empty = {};
+ empty.notReally = 1000;
+ alert(empty.notReally);
