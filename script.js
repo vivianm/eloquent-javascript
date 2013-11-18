@@ -427,3 +427,5 @@ function findLivingCats() {
 		      alert("Hour: ", today.getHours(), ", minutes: ",
 		      today.getMinutes(), ", seconds: ", today.getSeconds());
 			    alert("Day of week: ", today.getDay());
+			    var today = new Date();
+			    alert(today.getTime());
