@@ -307,3 +307,10 @@ for (var current = 0; current < mailArchive.length; current++)
 var doh = "Doh";
 alert(typeof doh.toUpperCase);
 alert(doh.toUpperCase());
+var mack = [];
+mack.push("Mack");
+mack.push("the");
+mack.push("Knife");
+alert(mack.join(" "));
+alert(mack.pop());
+alert(mack);
