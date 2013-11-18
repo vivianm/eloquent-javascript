@@ -20,3 +20,5 @@ while (currentNumber <= 12) {
   alert(currentNumber);
     currentNumber = currentNumber + 2;
     }
+    var input = prompt("What is your name?", "Kilgore Trout");
+    alert("Well hello " + (input || "dear"));
