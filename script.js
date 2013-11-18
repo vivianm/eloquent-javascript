@@ -421,3 +421,9 @@ function findLivingCats() {
 		alert(new Date());
 		alert(new Date(1980, 1, 1));
 		alert(new Date(2007, 2, 30, 8, 20, 30));
+		var today = new Date();
+		alert("Year: ", today.getFullYear(), ", month: ",
+		      today.getMonth(), ", day: ", today.getDate());
+		      alert("Hour: ", today.getHours(), ", minutes: ",
+		      today.getMinutes(), ", seconds: ", today.getSeconds());
+			    alert("Day of week: ", today.getDay());
