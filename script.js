@@ -368,4 +368,5 @@ for (var i = 0; i < mailArchive.length; i++) {
 										  alert("Spot lives!");
 										  else
 										    alert("Good old Spot, may she rest in peace.");
-
+for (var cat in livingCats)
+  alert(cat);
