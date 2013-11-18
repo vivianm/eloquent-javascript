@@ -258,3 +258,8 @@ function greaterThan(x) {
  var empty = {};
  empty.notReally = 1000;
  alert(empty.notReally);
+ var thing = {"gabba gabba": "hey", "5": 10};
+ alert(thing["5"]);
+ thing["5"] = 20;
+ alert(thing[2 + 3]);
+ delete thing["gabba gabba"];
