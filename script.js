@@ -249,3 +249,9 @@ function greaterThan(x) {
 	alert(greaterThanTen(9));
 	alert("Hello", "Good Evening", "How do you do?", "Goodbye");
  function
+ var cat = {colour: "grey", name: "Spot", size: 46};
+ cat.size = 47;
+ alert(cat.size);
+ delete cat.size;
+ alert(cat.size);
+ alert(cat);
