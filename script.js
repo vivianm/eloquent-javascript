@@ -263,3 +263,7 @@ function greaterThan(x) {
  thing["5"] = 20;
  alert(thing[2 + 3]);
  delete thing["gabba gabba"];
+ var chineseBox = {};
+ chineseBox.content = chineseBox;
+ alert("content" in chineseBox);
+ alert("content" in chineseBox.content);
