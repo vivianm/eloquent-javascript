@@ -325,3 +325,6 @@ for (var i = 0; i < mailArchive.length; i++) {
       alert(words.split(" "));
       var array = ["a", "b", "c d"];
       alert(array.join(" ").split(" "));
+      var paragraph = "born 15-11-2003 (mother Spot): White Fang";
+      alert(paragraph.charAt(0) == "b" && paragraph.charAt(1) == "o" &&
+           paragraph.charAt(2) == "r" && paragraph.charAt(3) == "n");
