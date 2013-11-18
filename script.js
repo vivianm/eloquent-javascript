@@ -468,3 +468,9 @@ function findLivingCats() {
 			    }
 
  alert(extractMother("born 15/11/2003 (mother Spot): White Fang"));
+ function between(string, start, end) {
+   var startAt = string.indexOf(start) + start.length;
+     var endAt = string.indexOf(end, startAt);
+       return string.slice(startAt, endAt);
+       }
+       alert(between("bu ] boo [ bah ] gzz", "[ ", " ]"));
