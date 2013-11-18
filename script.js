@@ -328,3 +328,8 @@ for (var i = 0; i < mailArchive.length; i++) {
       var paragraph = "born 15-11-2003 (mother Spot): White Fang";
       alert(paragraph.charAt(0) == "b" && paragraph.charAt(1) == "o" &&
            paragraph.charAt(2) == "r" && paragraph.charAt(3) == "n");
+	   function startsWith(string, pattern) {
+	     return string.slice(0, pattern.length) == pattern;
+	     }
+
+	     alert(startsWith("rotation", "rot"));
