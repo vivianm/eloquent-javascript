@@ -342,3 +342,26 @@ for (var i = 0; i < mailArchive.length; i++) {
 
 		 alert(catNames("born 20/09/2004 (mother Yellow Bess): " +
 		               "Doctor Hobbles the 2nd, Noog"));
+			       var mailArchive = retrieveMails();
+			       var livingCats = {"Spot": true};
+
+	for (var mail = 0; mail < mailArchive.length; mail++) {
+		var paragraphs = mailArchive[mail].split("\n");
+				   for (var paragraph = 0;
+				          paragraph < paragraphs.length;
+					         paragraph++) {
+		if (startsWith(paragraphs[paragraph], "born")) {
+ var names = catNames(paragraphs[paragraph]);
+	for (var name = 0; name < names.length; name++)
+	livingCats[names[name]] = true;
+									     }
+									         else if (startsWith(paragraphs[paragraph], "died")) {
+										       var names = catNames(paragraphs[paragraph]);
+										             for (var name = 0; name < names.length; name++)
+											             delete livingCats[names[name]];
+												         }
+													   }
+													   }
+
+													   alert(livingCats);
+
