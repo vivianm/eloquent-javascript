@@ -293,3 +293,7 @@ var mailArchive = {"the first e-mail": "Dear nephew, ...",
 
  for (var current = 0; current in mailArchive; current++)
 alert("Processing e-mail #", current, ": ", mailArchive[current]);
+var mailArchive = ["mail one", "mail two", "mail three"];
+
+for (var current = 0; current < mailArchive.length; current++)
+  alert("Processing e-mail #", current, ": ", mailArchive[current]);
