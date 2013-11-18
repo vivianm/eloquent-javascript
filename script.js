@@ -304,4 +304,6 @@ for (var current = 0; current < mailArchive.length; current++)
 	    return result;
 	    }
 	    alert(range(4));
-
+var doh = "Doh";
+alert(typeof doh.toUpperCase);
+alert(doh.toUpperCase());
