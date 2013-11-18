@@ -438,3 +438,5 @@ function findLivingCats() {
 			    var wallFall1 = new Date(1989, 10, 9),
 			        wallFall2 = new Date(1989, 10, 9);
 			alert(wallFall1.getTime() == wallFall2.getTime());
+			var now = new Date();
+			alert(now.getTimezoneOffset());
