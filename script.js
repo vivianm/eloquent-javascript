@@ -19,7 +19,7 @@ var currentNumber = 0;
 while (currentNumber <= 12) {
   alert(currentNumber);
     currentNumber = currentNumber + 2;
-<<<<<<< HEAD
+ HEAD
    }
    var currentNumber = 0;
    while (currentNumber <= 12) {
@@ -75,7 +75,6 @@ while (currentNumber <= 12) {
 	   Seriously, we just add one to it. */
 	     counter++;
 	     // And then, we are done.
-=======
     }
 var answer;
 while (true) {
@@ -91,4 +90,6 @@ while (true) {
 			    alert("You're an embarrassment.");
 			      }
 			      }
->>>>>>> break
+HEAD
+break
+break
