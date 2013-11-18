@@ -77,6 +77,7 @@ while (currentNumber <= 12) {
 	     counter++;
 	     // And then, we are done.
     }
+ HEAD
 var answer;
 while (true) {
   answer = prompt("You! What is the value of 2 + 2?", "");
@@ -130,3 +131,7 @@ alert(null + "ify");
 alert("5" * 5);
 alert("strawberry" * 5);
  undefined
+
+    var input = prompt("What is your name?", "Kilgore Trout");
+    alert("Well hello " + (input || "dear"));
+ operators
