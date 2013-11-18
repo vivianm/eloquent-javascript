@@ -19,6 +19,7 @@ var currentNumber = 0;
 while (currentNumber <= 12) {
   alert(currentNumber);
     currentNumber = currentNumber + 2;
+<<<<<<< HEAD
    }
    var currentNumber = 0;
    while (currentNumber <= 12) {
@@ -74,3 +75,20 @@ while (currentNumber <= 12) {
 	   Seriously, we just add one to it. */
 	     counter++;
 	     // And then, we are done.
+=======
+    }
+var answer;
+while (true) {
+  answer = prompt("You! What is the value of 2 + 2?", "");
+    if (answer == "4") {
+        alert("You must be a genius or something.");
+	    break;
+	      }
+	        else if (answer == "3" || answer == "5") {
+		    alert("Almost!");
+		      }
+		        else {
+			    alert("You're an embarrassment.");
+			      }
+			      }
+>>>>>>> break
