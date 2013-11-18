@@ -393,3 +393,26 @@ else if (startsWith(paragraphs[paragraph], "died"))
 						        
 						    }
 						      }
+function findLivingCats() {
+  var mailArchive = retrieveMails();
+    var livingCats = {"Spot": true};
+
+      function handleParagraph(paragraph) {
+          if (startsWith(paragraph, "born"))
+	        addToSet(livingCats, catNames(paragraph));
+		    else if (startsWith(paragraph, "died"))
+		          removeFromSet(livingCats, catNames(paragraph));
+			    }
+
+	for (var mail = 0; mail < mailArchive.length; mail++) {
+		  var paragraphs = mailArchive[mail].split("\n");
+	   for (var i = 0; i < paragraphs.length; i++)
+	        handleParagraph(paragraphs[i]);
+					      }
+					        return livingCats;
+						}
+
+			var howMany = 0;
+			for (var cat in findLivingCats())
+			 howMany++;
+		alert("There are ", howMany, " cats.");
