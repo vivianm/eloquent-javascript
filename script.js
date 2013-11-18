@@ -115,3 +115,11 @@ function findSequence(goal) {
 						 }
 
 						 alert(findSequence(24));
+function greaterThan(x) {
+  return function(y) {
+      return y > x;
+        };
+	}
+
+	var greaterThanTen = greaterThan(10);
+	alert(greaterThanTen(9));
