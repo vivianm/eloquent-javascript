@@ -284,4 +284,6 @@ alert(object1 == object3);
 object1.value = 15;
 alert(object2.value);
 alert(object3.value);
-
+var mailArchive = {"the first e-mail": "Dear nephew, ...",
+                   "the second e-mail": "..."
+		                      /* and so on ... */};
