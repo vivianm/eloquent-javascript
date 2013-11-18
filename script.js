@@ -90,6 +90,7 @@ while (true) {
 		        else {
 			    alert("You're an embarrassment.");
 			      }
+ HEAD
 			      }
 HEAD
 break
@@ -109,3 +110,23 @@ for (var current = 20; ; current++) {
       }
       alert(current);
       prompt
+
+			      var mysteryVariable;
+			      alert(mysteryVariable);
+			      alert(alert("I am a side effect."));
+			     alert(false == 0);
+			     alert("" == 0);
+			     alert("5" == 5);
+			     alert(null === undefined);
+			     alert(false === 0);
+			     alert("" === 0);
+			     alert("5" === 5);
+			     var maybeNull = null;
+	 // ... mystery code that might put a string into maybeNull ...
+			     if (maybeNull)
+			       print("maybeNull has a value");
+alert("Apollo" + 5);
+alert(null + "ify");
+alert("5" * 5);
+alert("strawberry" * 5);
+ undefined
