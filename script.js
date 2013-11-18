@@ -416,3 +416,5 @@ function findLivingCats() {
 			for (var cat in findLivingCats())
 			 howMany++;
 		alert("There are ", howMany, " cats.");
+		var when = new Date(1980, 1, 1);
+		alert(when);
