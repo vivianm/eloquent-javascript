@@ -314,3 +314,10 @@ mack.push("Knife");
 alert(mack.join(" "));
 alert(mack.pop());
 alert(mack);
+var mailArchive = retrieveMails();
+
+for (var i = 0; i < mailArchive.length; i++) {
+  var email = mailArchive[i];
+    alert("Processing e-mail #", i);
+      // Do more things...
+      }
