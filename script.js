@@ -70,3 +70,7 @@ while (currentNumber <= 12) {
 			     alert(false == 0);
 			     alert("" == 0);
 			     alert("5" == 5);
+			     alert(null === undefined);
+			     alert(false === 0);
+			     alert("" === 0);
+			     alert("5" === 5);
