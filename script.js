@@ -33,3 +33,8 @@ function add(a, b) {
 			}
 
 			alert(absolute(-144));
+			function yell(message) {
+			  alert(message + "!!");
+			  }
+
+			  yell("Yow");
