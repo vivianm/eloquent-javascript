@@ -74,3 +74,7 @@ while (currentNumber <= 12) {
 			     alert(false === 0);
 			     alert("" === 0);
 			     alert("5" === 5);
+			     var maybeNull = null;
+	 // ... mystery code that might put a string into maybeNull ...
+			     if (maybeNull)
+			       print("maybeNull has a value");
