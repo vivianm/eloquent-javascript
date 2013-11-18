@@ -542,3 +542,16 @@ addCats(cats, catNames(paragraph), extractDate(paragraph),
 															}
 
 															alert(oldestCat(catData));
+function range(start, end) {
+  if (arguments.length < 2) {
+      end = start;
+          start = 0;
+	    }
+	      var result = [];
+	        for (var i = start; i <= end; i++)
+		    result.push(i);
+		      return result;
+		      }
+
+		      alert(range(4));
+		      alert(range(2, 4));
