@@ -38,3 +38,9 @@ function add(a, b) {
 			  }
 
 			  yell("Yow");
+			  function alertIsPrint(value) {
+			    var alert = print;
+			      alert(value);
+			      }
+
+			      alertIsPrint("Troglodites");
