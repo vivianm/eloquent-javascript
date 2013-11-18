@@ -333,3 +333,5 @@ for (var i = 0; i < mailArchive.length; i++) {
 	     }
 
 	     alert(startsWith("rotation", "rot"));
+	     alert("Pip".charAt(250));
+	     alert("Nop".slice(1, 10));
