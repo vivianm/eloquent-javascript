@@ -25,3 +25,11 @@ function add(a, b) {
 	    }
 
 	    alert(power(2, 10));
+	    function absolute(number) {
+	      if (number < 0)
+	          return -number;
+		    else
+		        return number;
+			}
+
+			alert(absolute(-144));
