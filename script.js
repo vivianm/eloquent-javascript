@@ -73,3 +73,15 @@ function parentFunction() {
 	        alert("Inside: " + something);
 		}
 		alert("Outside: " + something);
+
+		var variable = "top-level";
+		function parentFunction() {
+		  var variable = "local";
+		    function childFunction() {
+		        alert(variable);
+			  }
+			    return childFunction;
+			    }
+
+			    var child = parentFunction();
+			    child();
