@@ -114,4 +114,4 @@ function findSequence(goal) {
 					         return find(1, "1");
 						 }
 
-						 print(findSequence(24));
+						 alert(findSequence(24));
