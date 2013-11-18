@@ -95,3 +95,9 @@ function parentFunction() {
 				      var addTwo = makeAddFunction(2);
 				      var addFive = makeAddFunction(5);
 				      alert(addTwo(1) + addFive(1));
+function power(base, exponent) {
+  if (exponent == 0)
+      return 1;
+        else
+	    return base * power(base, exponent - 1);
+	    }
