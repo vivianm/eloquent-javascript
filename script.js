@@ -435,3 +435,6 @@ function findLivingCats() {
 			    alert(wallFall == wallFall);
 			    // but
 			    alert(wallFall == new Date(1989, 10, 9));
+			    var wallFall1 = new Date(1989, 10, 9),
+			        wallFall2 = new Date(1989, 10, 9);
+			alert(wallFall1.getTime() == wallFall2.getTime());
