@@ -685,3 +685,10 @@ function negate(func) {
 	}
 	var isNotNaN = negate(isNaN);
 	alert(isNotNaN(NaN));
+	alert(Math.min.apply(null, [5, 6]));
+
+	function negate(func) {
+	  return function() {
+	      return !func.apply(null, arguments);
+	        };
+		}
