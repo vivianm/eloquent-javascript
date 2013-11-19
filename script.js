@@ -931,3 +931,4 @@ function asArray(quasiArray, start) {
 	          return func.apply(null, fixedArgs.concat(asArray(arguments)));
 		    };
 		    }
+alert(map(partial(op["+"], 1), [0, 2, 4, 6, 8, 10]));		    
