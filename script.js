@@ -625,3 +625,9 @@ function processThing(thing) {
 		      currentThing = null;
 		        }
 			}
+try {
+  alert(Sasquatch);
+  }
+  catch (error) {
+    alert("Caught: " + error.message);
+    }
