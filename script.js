@@ -578,3 +578,11 @@ var input = prompt("Tell me something", "");
 var parenthesized = between(input, "(", ")");
 if (parenthesized != undefined)
   alert("You parenthesized '", parenthesized, "'.");
+  function lastElement(array) {
+    if (array.length > 0)
+        return array[array.length - 1];
+	  else
+	      return undefined;
+	      }
+
+	      alert(lastElement([1, 2, undefined]));
