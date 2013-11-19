@@ -746,3 +746,5 @@ function processParagraph(paragraph) {
 			  }
 
 			  alert(processParagraph(paragraphs[0]));
+var paragraphs = map(processParagraph,
+                     recluseFile().split("\n\n"));
