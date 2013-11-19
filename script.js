@@ -935,3 +935,8 @@ alert(map(partial(op["+"], 1), [0, 2, 4, 6, 8, 10]));
 function square(x) {return x * x;}
 
 alert(map(partial(map, square), [[10, 100], [12, 16], [0, 1]]));
+function negate(func) {
+  return function() {
+      return !func.apply(null, arguments);
+        };
+	}
