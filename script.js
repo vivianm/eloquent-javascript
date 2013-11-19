@@ -822,3 +822,6 @@ var paragraphs = map(processParagraph,
 																														var linkObject = {name: "a",
 																														                  attributes: {href: "http://www.gokgs.com/"},
 																																                    content: ["Play Go!"]};
+																														function tag(name, content, attributes) {
+																														  return {name: name, attributes: attributes, content: content};
+																														  }
