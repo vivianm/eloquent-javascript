@@ -574,3 +574,7 @@ function between(string, start, end) {
 
 		    return string.slice(startAt, endAt);
 		    }
+var input = prompt("Tell me something", "");
+var parenthesized = between(input, "(", ")");
+if (parenthesized != undefined)
+  alert("You parenthesized '", parenthesized, "'.");
