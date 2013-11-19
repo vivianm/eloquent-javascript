@@ -818,4 +818,7 @@ var paragraphs = map(processParagraph,
 																															  });
 
 																															    return footnotes;
-																															    }     
+																															    }
+																														var linkObject = {name: "a",
+																														                  attributes: {href: "http://www.gokgs.com/"},
+																																                    content: ["Play Go!"]};
