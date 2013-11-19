@@ -631,3 +631,4 @@ try {
   catch (error) {
     alert("Caught: " + error.message);
     }
+    throw new Error("Fire!");
