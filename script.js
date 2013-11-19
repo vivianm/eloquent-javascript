@@ -734,3 +734,15 @@ function map(func, array) {
 	    }
 
 	    alert(map(Math.round, [0.01, 2, 9.89, Math.PI]));
+function processParagraph(paragraph) {
+  var header = 0;
+    while (paragraph.charAt(0) == "%") {
+        paragraph = paragraph.slice(1);
+	    header++;
+	      }
+
+	        return {type: (header == 0 ? "p" : "h" + header),
+		          content: paragraph};
+			  }
+
+			  alert(processParagraph(paragraphs[0]));
