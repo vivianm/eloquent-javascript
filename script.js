@@ -911,3 +911,10 @@ var body = map(renderParagraph, paragraphs).concat(footnotes);
 			      }
 
 viewHTML(renderFile(recluseFile(), "The Book of Programming"));
+var op = {
+  "+": function(a, b){return a + b;},
+    "==": function(a, b){return a == b;},
+      "===": function(a, b){return a === b;},
+        "!": function(a){return !a;}
+	  /* and so on */
+	  };
