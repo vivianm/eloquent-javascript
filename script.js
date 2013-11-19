@@ -725,3 +725,12 @@ function count(test, array) {
 	  function countZeroes(array) {
 	    return count(equals(0), array);
 	    }
+function map(func, array) {
+  var result = [];
+    forEach(array, function (element) {
+        result.push(func(element));
+	  });
+	    return result;
+	    }
+
+	    alert(map(Math.round, [0.01, 2, 9.89, Math.PI]));
