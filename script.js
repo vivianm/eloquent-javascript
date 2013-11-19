@@ -885,3 +885,7 @@ var body = [tag("h1", ["The Test"]),
 	                image("img/sheep.png")];
 			var doc = htmlDoc("The Test", body);
 			viewHTML(renderHTML(doc));
+function footnote(number) {
+  return tag("sup", [link("#footnote" + number,
+                            String(number))]);
+			    }
