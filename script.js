@@ -879,4 +879,4 @@ var paragraphs = map(processParagraph,
 																																																		    render(element);
 																																																		      return pieces.join("");
 																																																		      }
-
+alert(renderHTML(link("http://www.nedroid.com", "Drawings!")));
