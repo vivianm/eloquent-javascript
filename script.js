@@ -880,3 +880,8 @@ var paragraphs = map(processParagraph,
 																																																		      return pieces.join("");
 																																																		      }
 alert(renderHTML(link("http://www.nedroid.com", "Drawings!")));
+var body = [tag("h1", ["The Test"]),
+            tag("p", ["Here is a paragraph, and an image..."]),
+	                image("img/sheep.png")];
+			var doc = htmlDoc("The Test", body);
+			viewHTML(renderHTML(doc));
