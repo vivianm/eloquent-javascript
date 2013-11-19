@@ -613,3 +613,15 @@ if (parenthesized != undefined)
 					  /* do complicated processing... */
 					    currentThing = null;
 					    }
+function processThing(thing) {
+  if (currentThing != null)
+      throw "Oh no! We are already processing a thing!";
+
+        currentThing = thing;
+	  try {
+	      /* do complicated processing... */
+	        }
+		  finally {
+		      currentThing = null;
+		        }
+			}
