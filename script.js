@@ -670,3 +670,11 @@ try {
 											   }
 
 											   forEach(["Wampeter", "Foma", "Granfalloon"], alert);
+function sum(numbers) {
+  var total = 0;
+    forEach(numbers, function (number) {
+        total += number;
+	  });
+	    return total;
+	    }
+	    alert(sum([1, 10, 100]));
