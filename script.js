@@ -833,3 +833,6 @@ var paragraphs = map(processParagraph,
 																														      return tag("html", [tag("head", [tag("title", [title])]),
 																														                            tag("body", bodyContent)]);
 																																	    }
+																														function image(src) {
+																														  return tag("img", [], {src: src});
+																														  }
