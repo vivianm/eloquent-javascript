@@ -31,3 +31,12 @@ makeRoads("Point Kiukiu", "Hanaiapa", 19,
 	  makeRoads("Puamua", "Mt Ootua", 13, "Point Teohotepapapa", 14);
 
 		    alert(roads["Airport"]);
+function roadsFrom(place) {
+  var found = roads[place];
+    if (found == undefined)
+        throw new Error("No place named '" + place + "' found.");
+	  else
+	      return found;
+	      }
+
+	      alert(roadsFrom("Puamua"));
