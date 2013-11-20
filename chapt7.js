@@ -96,3 +96,13 @@ function any(test, array) {
 		      }
 
 		      alert(member(["Fear", "Loathing"], "Denial"));
+function every(test, array) {
+  for (var i = 0; i < array.length; i++) {
+      var found = test(array[i]);
+          if (!found)
+	        return found;
+		  }
+		    return true;
+		    }
+
+		    show(every(partial(op["!="], 0), [1, 2, -1]));
