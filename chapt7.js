@@ -40,3 +40,23 @@ function roadsFrom(place) {
 	      }
 
 	      alert(roadsFrom("Puamua"));
+function gamblerPath(from, to) {
+  function randomInteger(below) {
+      return Math.floor(Math.random() * below);
+        }
+	  function randomDirection(from) {
+	      var options = roadsFrom(from);
+	          return options[randomInteger(options.length)].to;
+		    }
+
+		      var path = [];
+		        while (true) {
+			    path.push(from);
+			        if (from == to)
+				      break;
+				          from = randomDirection(from);
+					    }
+					      return path;
+					      }
+
+		alert(gamblerPath("Hanaiapa", "Mt Feani"));
