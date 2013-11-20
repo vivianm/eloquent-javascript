@@ -106,3 +106,10 @@ function every(test, array) {
 		    }
 
 		    show(every(partial(op["!="], 0), [1, 2, -1]));
+  function flatten(arrays) {
+      var result = [];
+          forEach(arrays, function (array) {
+	        forEach(array, function (element){result.push(element);});
+		    });
+		        return result;
+			  }
