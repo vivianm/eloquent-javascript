@@ -123,3 +123,25 @@ function filter(test, array) {
 		  }
 
 		  show(filter(partial(op[">"], 5), [0, 4, 8, 12]));
+function possibleRoutes(from, to) {
+  function findRoutes(route) {
+      function notVisited(road) {
+            return !member(route.places, road.to);
+	        }
+		    function continueRoute(road) {
+		     return findRoutes({places: route.places.concat([road.to]),
+			           length: route.length + road.distance});
+						       }
+
+	var end = route.places[route.places.length - 1];
+				if (end == to)
+				return [route];
+				else
+	return flatten(map(continueRoute, filter(notVisited,
+									                                                      roadsFrom(end))));
+															        }
+											return findRoutes({places: [from], length: 0});
+																  }
+
+										show(possibleRoutes("Point Teohotepapapa", "Point Kiukiu").length);
+											show(possibleRoutes("Hanapaoa", "Mt Ootua"));
