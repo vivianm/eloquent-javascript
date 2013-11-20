@@ -177,3 +177,9 @@ function minimise(func, array) {
 					    }
 alert(heightAt({x: 0, y: 0}));
 alert(heightAt({x: 11, y: 18}));
+function weightedDistance(pointA, pointB) {
+  var heightDifference = heightAt(pointB) - heightAt(pointA);
+    var climbFactor = (heightDifference < 0 ? 1 : 2);
+ var flatDistance = (pointA.x == pointB.x || pointA.y == pointB.y ? 100 : 141);
+        return flatDistance + climbFactor * Math.abs(heightDifference);
+	}
