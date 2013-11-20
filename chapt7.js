@@ -30,4 +30,4 @@ makeRoads("Point Kiukiu", "Hanaiapa", 19,
 		    makeRoads("Hanapaoa", "Mt Ootua", 3);
 	  makeRoads("Puamua", "Mt Ootua", 13, "Point Teohotepapapa", 14);
 
-		    show(roads["Airport"]);
+		    alert(roads["Airport"]);
