@@ -60,3 +60,13 @@ function gamblerPath(from, to) {
 					      }
 
 		alert(gamblerPath("Hanaiapa", "Mt Feani"));
+function member(array, value) {
+  var found = false;
+    forEach(array, function(element) {
+        if (element === value)
+	      found = true;
+	        });
+		  return found;
+		  }
+
+		  alert(member([6, 7, "Bordeaux"], 7));
