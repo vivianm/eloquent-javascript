@@ -175,3 +175,5 @@ function minimise(func, array) {
 					  function shortestRoute(from, to) {
 	return minimise(getProperty("length"), possibleRoutes(from, to));
 					    }
+alert(heightAt({x: 0, y: 0}));
+alert(heightAt({x: 11, y: 18}));
