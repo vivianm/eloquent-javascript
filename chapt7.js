@@ -213,3 +213,14 @@ function possibleDirections(from) {
 												}
 
 												show(possibleDirections(point(0, 0)));
+									
+function identity(x) {
+  return x;
+  }
+
+  var heap = new BinaryHeap(identity);
+  forEach([2, 4, 5, 1, 6, 3], function(number) {
+    heap.push(number);
+    });
+    while (heap.size() > 0)
+      show(heap.pop());
