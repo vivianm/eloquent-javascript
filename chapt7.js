@@ -252,3 +252,18 @@ function makeReachedList() {
 			    else
 			        return inner[point.y];
 				}
+function pointID(point) {
+  return point.x + "-" + point.y;
+  }
+
+  function makeReachedList() {
+    return {};
+    }
+
+    function storeReached(list, point, route) {
+      list[pointID(point)] = route;
+      }
+
+      function findReached(list, point) {
+        return list[pointID(point)];
+	}
