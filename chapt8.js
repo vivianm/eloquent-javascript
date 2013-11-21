@@ -69,3 +69,7 @@ function Rabbit(adjective) {
 
     var hazelRabbit = new Rabbit("hazel");
     hazelRabbit.speak("Good Frith!");
+
+var noCatsAtAll = {};
+if ("constructor" in noCatsAtAll)
+  alert("Yes, there definitely is a cat called 'constructor'.");
