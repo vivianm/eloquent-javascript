@@ -107,3 +107,13 @@ function forEachIn(object, action) {
 	      forEachIn(chimera, function(name, value) {
 	        alert("The ", name, " of a ", value, ".");
 		});
+
+Object.prototype.properties = function() {
+  var result = [];
+    for (var property in this)
+        result.push(property);
+	  return result;
+	  };
+
+	  var test = {x: 10, y: 3};
+	  show(test.properties());
