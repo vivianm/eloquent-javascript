@@ -39,3 +39,7 @@ function makeRabbit(adjective) {
 
 show(killerRabbit.constructor);
 show(blackRabbit.constructor);
+
+var simpleObject = {};
+show(simpleObject.constructor);
+show(simpleObject.toString);
