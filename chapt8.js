@@ -43,3 +43,5 @@ show(blackRabbit.constructor);
 var simpleObject = {};
 show(simpleObject.constructor);
 show(simpleObject.toString);
+show(Rabbit.prototype);
+show(Rabbit.prototype.constructor);
