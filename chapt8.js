@@ -45,3 +45,5 @@ show(simpleObject.constructor);
 show(simpleObject.toString);
 show(Rabbit.prototype);
 show(Rabbit.prototype.constructor);
+
+show(killerRabbit.toString == simpleObject.toString);
