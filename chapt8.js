@@ -16,3 +16,14 @@ rabbit.speak = function(line) {
 
 speak.apply(fatRabbit, ["Yum."]);
 speak.call(fatRabbit, "Burp.");
+
+
+function Rabbit(adjective) {
+  this.adjective = adjective;
+    this.speak = function(line) {
+        alert("The ", this.adjective, " rabbit says '", line, "'");
+	  };
+	  }
+
+	  var killerRabbit = new Rabbit("killer");
+	  killerRabbit.speak("GRAAAAAAAAAH!");
