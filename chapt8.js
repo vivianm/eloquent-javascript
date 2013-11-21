@@ -47,3 +47,9 @@ show(Rabbit.prototype);
 show(Rabbit.prototype.constructor);
 
 show(killerRabbit.toString == simpleObject.toString);
+
+Rabbit.prototype.teeth = "small";
+show(killerRabbit.teeth);
+killerRabbit.teeth = "long, sharp, and bloody";
+show(killerRabbit.teeth);
+show(Rabbit.prototype.teeth);
