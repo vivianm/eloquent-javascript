@@ -27,3 +27,12 @@ function Rabbit(adjective) {
 
 	  var killerRabbit = new Rabbit("killer");
 	  killerRabbit.speak("GRAAAAAAAAAH!");
+
+function makeRabbit(adjective) {
+  return {
+      adjective: adjective,
+          speak: function(line) {/*etc*/}
+	    };
+	    }
+
+	    var blackRabbit = makeRabbit("black");
