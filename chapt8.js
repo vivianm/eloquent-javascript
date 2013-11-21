@@ -53,3 +53,9 @@ show(killerRabbit.teeth);
 killerRabbit.teeth = "long, sharp, and bloody";
 show(killerRabbit.teeth);
 show(Rabbit.prototype.teeth);
+
+Rabbit.prototype.dance = function() {
+  alert("The ", this.adjective, " rabbit dances a jig.");
+  };
+
+  killerRabbit.dance();
