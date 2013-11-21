@@ -95,3 +95,15 @@ Object.prototype.properties = function() {
 
 		  var test = {"Fat Igor": true, "Fireball": true};
 		  show(test.properties());
+
+function forEachIn(object, action) {
+  for (var property in object) {
+      if (object.hasOwnProperty(property))
+            action(property, object[property]);
+	      }
+	      }
+
+	      var chimera = {head: "lion", body: "goat", tail: "snake"};
+	      forEachIn(chimera, function(name, value) {
+	        alert("The ", name, " of a ", value, ".");
+		});
