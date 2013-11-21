@@ -59,3 +59,13 @@ Rabbit.prototype.dance = function() {
   };
 
   killerRabbit.dance();
+
+function Rabbit(adjective) {
+  this.adjective = adjective;
+  }
+  Rabbit.prototype.speak = function(line) {
+    alert("The ", this.adjective, " rabbit says '", line, "'");
+    };
+
+    var hazelRabbit = new Rabbit("hazel");
+    hazelRabbit.speak("Good Frith!");
