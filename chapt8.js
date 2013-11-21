@@ -154,3 +154,8 @@ function forEachIn(object, action) {
 	      forEachIn(test, function(name, value) {
 	        alert("Property ", name, " = ", value);
 		});
+
+
+var object = {foo: "bar"};
+show(Object.prototype.hasOwnProperty.call(object, "foo") &&
+     Object.prototype.propertyIsEnumerable.call(object, "foo"));
