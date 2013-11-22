@@ -320,3 +320,6 @@ Terrarium.prototype.toString = function() {
 		      });
 		        return characters.join("");
 			};
+
+var terrarium = new Terrarium(thePlan);
+alert(terrarium.toString());
