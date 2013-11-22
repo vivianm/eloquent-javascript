@@ -263,4 +263,7 @@ var directions = new Dictionary(
 		       show(new Point(4, 4).add(directions.lookup("se")));
 
 
-
+function StupidBug() {};
+StupidBug.prototype.act = function(surroundings) {
+  return {type: "move", direction: "s"};
+  };
