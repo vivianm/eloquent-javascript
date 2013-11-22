@@ -159,3 +159,44 @@ function forEachIn(object, action) {
 var object = {foo: "bar"};
 show(Object.prototype.hasOwnProperty.call(object, "foo") &&
      Object.prototype.propertyIsEnumerable.call(object, "foo"));
+
+
+function Dictionary(startValues) {
+  this.values = startValues || {};
+  }
+  Dictionary.prototype.store = function(name, value) {
+    this.values[name] = value;
+    };
+    Dictionary.prototype.lookup = function(name) {
+      return this.values[name];
+      };
+      Dictionary.prototype.contains = function(name) {
+        return Object.prototype.hasOwnProperty.call(this.values, name) &&
+	    Object.prototype.propertyIsEnumerable.call(this.values, name);
+	    };
+	    Dictionary.prototype.each = function(action) {
+	      forEachIn(this.values, action);
+	      };
+
+	      var colours = new Dictionary({Grover: "blue",
+	                                    Elmo: "orange",
+	 Bert: "yellow"});
+show(colours.contains("Grover"));
+show(colours.contains("constructor"));
+colours.each(function(name, colour) {
+alert(name, " is ", colour);
+		});
+
+
+function Point(x, y) {
+  this.x = x;
+    this.y = y;
+    }
+    Point.prototype.add = function(other) {
+      return new Point(this.x + other.x, this.y + other.y);
+      };
+      Point.prototype.isEqualTo = function(other) {
+        return this.x == other.x && this.y == other.y;
+	};
+
+	show((new Point(3, 1)).add(new Point(2, 4)));
