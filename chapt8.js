@@ -516,4 +516,10 @@ var newPlan =
 				   terrarium.start();
 
 
-terrarium.stop();				  
+terrarium.stop();	
+
+function clone(object) {
+  function OneShotConstructor(){}
+    OneShotConstructor.prototype = object;
+      return new OneShotConstructor();
+      }
