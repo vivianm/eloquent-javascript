@@ -403,4 +403,18 @@ Point.prototype.toString = function() {
 var annoy = setInterval(function() {print("What?");}, 400);
 clearInterval(annoy);
 
+Terrarium.prototype.start = function() {
+  if (!this.running)
+      this.running = setInterval(bind(this.step, this), 500);
+      };
+
+      Terrarium.prototype.stop = function() {
+        if (this.running) {
+	    clearInterval(this.running);
+	        this.running = null;
+		  }
+		  };
+
+
+
 
