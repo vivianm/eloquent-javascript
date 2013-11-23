@@ -336,3 +336,11 @@ function bind(func, object) {
 	pushTest("A");
 	pushTest("B");
 	show(testArray);
+
+function method(object, name) {
+  return function() {
+      return object[name].apply(object, arguments);
+        };
+	}
+
+	var pushTest = method(testArray, "push");
