@@ -495,3 +495,22 @@ DrunkBug.prototype.act = function(surroundings) {
 	    DrunkBug.prototype.character = "~";
 
 	    creatureTypes.register(DrunkBug);
+
+
+var newPlan =
+  ["############################",
+     "#                      #####",
+        "#    ##                 ####",
+	   "#   ####     ~ ~          ##",
+	      "#    ##       ~            #",
+	         "#                          #",
+		    "#                ###       #",
+		       "#               #####      #",
+		          "#                ###       #",
+			     "# %        ###        %    #",
+			        "#        #######           #",
+				   "############################"];
+
+				   var terrarium = new Terrarium(newPlan);
+	terrarium.onStep = partial(inPlacePrinter(), terrarium);
+				   terrarium.start();
