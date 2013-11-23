@@ -428,4 +428,6 @@ Terrarium.prototype.step = function() {
 	          this.onStep();
 		  };
 
-
+var terrarium = new Terrarium(thePlan);
+terrarium.onStep = partial(inPlacePrinter(), terrarium);
+terrarium.start();
