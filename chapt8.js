@@ -469,3 +469,12 @@ function BouncingBug() {
 	  BouncingBug.prototype.character = "%";
 
 	  creatureTypes.register(BouncingBug);
+
+
+Dictionary.prototype.names = function() {
+  var names = [];
+    this.each(function(name, value) {names.push(name);});
+      return names;
+      };
+
+      show(directions.names());
