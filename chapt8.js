@@ -441,3 +441,19 @@ function elementFromCharacter(character) {
 	      else if (character == "o")
 	          return new StupidBug();
 		  }
+
+var creatureTypes = new Dictionary();
+creatureTypes.register = function(constructor) {
+  this.store(constructor.prototype.character, constructor);
+  };
+
+  function elementFromCharacter(character) {
+    if (character == " ")
+        return undefined;
+	  else if (character == "#")
+	      return wall;
+	        else if (creatureTypes.contains(character))
+		    return new (creatureTypes.lookup(character))();
+		      else
+		          throw new Error("Unknown character: " + character);
+			  }
