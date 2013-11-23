@@ -395,4 +395,9 @@ alert(terrarium);
 terrarium.step();
 alert(terrarium);
 
+Point.prototype.toString = function() {
+  return "(" + this.x + "," + this.y + ")";
+  };
+  alert(new Point(5, 5));
+
 
