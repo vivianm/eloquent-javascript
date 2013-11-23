@@ -486,3 +486,12 @@ function randomElement(array) {
 	}
 
 	show(randomElement(["heads", "tails"]));
+
+function DrunkBug() {};
+DrunkBug.prototype.act = function(surroundings) {
+  return {type: "move",
+            direction: randomElement(directions.names())};
+	    };
+	    DrunkBug.prototype.character = "~";
+
+	    creatureTypes.register(DrunkBug);
