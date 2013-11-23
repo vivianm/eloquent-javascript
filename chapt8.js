@@ -737,3 +737,23 @@ Object.prototype.extend = function(properties) {
 	  });
 	    return result;
 	    };
+
+
+
+var Item = {
+  construct: function(name) {
+      this.name = name;
+        },
+	  inspect: function() {
+	      print("it is ", this.name, ".");
+	        },
+		  kick: function() {
+		      print("klunk!");
+		        },
+			  take: function() {
+			      print("you can not lift ", this.name, ".");
+			        }
+				};
+
+				var lantern = Item.create("the brass lantern");
+				lantern.kick();
