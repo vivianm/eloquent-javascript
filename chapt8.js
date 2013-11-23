@@ -416,5 +416,8 @@ Terrarium.prototype.start = function() {
 		  };
 
 
+var printHere = inPlacePrinter();
+alertHere("Now you see it.");
+setTimeout(partial(printHere, "Now you don't."), 1000);
 
 
