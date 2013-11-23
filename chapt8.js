@@ -632,3 +632,22 @@ function LichenEater() {
 			      LichenEater.prototype.character = "c";
 
 			      creatureTypes.register(LichenEater);
+
+
+var lichenPlan =
+  ["############################",
+     "#                     ######",
+        "#    ***                **##",
+	   "#   *##**         **  c  *##",
+	      "#    ***     c    ##**    *#",
+	         "#       c         ##***   *#",
+		    "#                 ##**    *#",
+		       "#   c       #*            *#",
+		          "#*          #**       c   *#",
+			     "#***        ##**    c    **#",
+			        "#*****     ###***       *###",
+				   "############################"];
+
+				   var terrarium = new LifeLikeTerrarium(lichenPlan);
+				   terrarium.onStep = partial(inPlacePrinter(), terrarium);
+				   terrarium.start();
