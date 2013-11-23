@@ -323,3 +323,16 @@ Terrarium.prototype.toString = function() {
 
 var terrarium = new Terrarium(thePlan);
 alert(terrarium.toString());
+
+
+function bind(func, object) {
+  return function(){
+      return func.apply(object, arguments);
+        };
+	}
+
+	var testArray = [];
+	var pushTest = bind(testArray.push, testArray);
+	pushTest("A");
+	pushTest("B");
+	show(testArray);
