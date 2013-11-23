@@ -421,3 +421,11 @@ alertHere("Now you see it.");
 setTimeout(partial(printHere, "Now you don't."), 1000);
 
 
+Terrarium.prototype.step = function() {
+  forEach(this.listActingCreatures(),
+            bind(this.processCreature, this));
+	      if (this.onStep)
+	          this.onStep();
+		  };
+
+
