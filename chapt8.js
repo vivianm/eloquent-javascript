@@ -389,3 +389,10 @@ Terrarium.prototype.step = function() {
   forEach(this.listActingCreatures(),
             bind(this.processCreature, this));
 	    };
+
+var terrarium = new Terrarium(thePlan);
+alert(terrarium);
+terrarium.step();
+alert(terrarium);
+
+
