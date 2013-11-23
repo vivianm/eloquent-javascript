@@ -400,4 +400,6 @@ Point.prototype.toString = function() {
   };
   alert(new Point(5, 5));
 
+var annoy = setInterval(function() {print("What?");}, 400);  
+
 
