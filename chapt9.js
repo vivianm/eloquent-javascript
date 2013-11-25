@@ -72,3 +72,15 @@ function provide(values) {
 					})();
 
 			 show(getDayNumber("Wednesday"));
+
+
+
+var HTML = {
+  tag: function(name, content, properties) {
+      return {name: name, properties: properties, content: content};
+        },
+	  link: function(target, text) {
+	      return HTML.tag("a", [text], {href: target});
+	        }
+		  /* ... many more HTML-producing functions ... */
+		  };
