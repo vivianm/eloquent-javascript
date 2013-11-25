@@ -23,4 +23,6 @@ require("TestModule.js");
 
 test();
 
-
+show(window);
+show(window.alert == alert);
+show(window.window.window.window.window);
