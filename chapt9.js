@@ -47,3 +47,9 @@ function buildMonthNameModule() {
 
 		show(getMonthName(11));
                  show(window.window.window.window.window);
+
+function provide(values) {
+  forEachIn(values, function(name, value) {
+      window[name] = value;
+        });
+	}
