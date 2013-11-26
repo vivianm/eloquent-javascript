@@ -74,3 +74,14 @@ function eatOne(match, amount, unit) {
 			stock = stock.replace(/(\d+) (\w+)/g, eatOne);
 
 			print(stock);
+
+
+function escapeHTML(text) {
+  var replacements = {"<": "&lt;", ">": "&gt;",
+                        "&": "&amp;", "\"": "&quot;"};
+			  return text.replace(/[<>&"]/g, function(character) {
+			      return replacements[character];
+			        });
+				}
+
+	alert(escapeHTML("The 'pre-formatted' tag is written \"<pre>\"."));
