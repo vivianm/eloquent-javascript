@@ -16,3 +16,5 @@ var story =
 
   show(/a+/.test("blah"));
   show(/^a+$/.test("blah"));
+
+  test method returns a boolean
