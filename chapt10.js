@@ -25,3 +25,10 @@ var story =
 
 var datePattern = /\d{1,2}\/\d\d?\/\d{4}/;
 show("born 15/11/2003 (mother Spot): White Fang".search(datePattern));
+
+
+var mailAddress = /\b[\w\.-]+@[\w\.-]+\.\w{2,3}\b/;
+
+show(mailAddress.test("kenny@test.net"));
+show(mailAddress.test("I mailt kenny@tets.nets, but it didn wrok!"));
+show(mailAddress.test("the_giant_sloth@gmail.com"));
