@@ -10,3 +10,6 @@ var story =
   show("1a 2 3d".search(digitSurroundedBySpace));
   var notABC = /[^ABC]/;
   show("ABCBACCBBADABC".search(notABC));
+
+  var datePattern = /\d\d\/\d\d\/\d\d\d\d/;
+  show("born 15/11/2003 (mother Spot): White Fang".search(datePattern));
