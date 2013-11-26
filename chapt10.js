@@ -39,3 +39,7 @@ show("Then, he exclaimed 'Boohoooohoohooo'".search(cartoonCrying));
 
 var holyCow = /(sacred|holy) (cow|bovine|bull|taurus)/i;
 show(holyCow.test("Sacred bovine!"));
+
+show("No".match(/Yes/));
+show("... yes".match(/yes/));
+show("Giant Ape".match(/giant (\w+)/i));
