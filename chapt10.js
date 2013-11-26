@@ -8,3 +8,5 @@ var story =
 
   var digitSurroundedBySpace = /\s\d\s/;
   show("1a 2 3d".search(digitSurroundedBySpace));
+  var notABC = /[^ABC]/;
+  show("ABCBACCBBADABC".search(notABC));
