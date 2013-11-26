@@ -22,3 +22,6 @@ var story =
   var parenthesizedText = /\(.*\)/;
   show("Its (the sloth's) claws were gigantic!".search(parenthesizedText));
 
+
+var datePattern = /\d{1,2}\/\d\d?\/\d{4}/;
+show("born 15/11/2003 (mother Spot): White Fang".search(datePattern));
