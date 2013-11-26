@@ -36,3 +36,6 @@ show(mailAddress.test("the_giant_sloth@gmail.com"));
 
 var cartoonCrying = /boo(hoo+)+/i;
 show("Then, he exclaimed 'Boohoooohoohooo'".search(cartoonCrying));
+
+var holyCow = /(sacred|holy) (cow|bovine|bull|taurus)/i;
+show(holyCow.test("Sacred bovine!"));
