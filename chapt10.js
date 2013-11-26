@@ -96,3 +96,6 @@ function isAcceptable(text) {
 
   show(isAcceptable("Mmmm, grapes."));
   show(isAcceptable("No more of that monkeybusiness, now."));
+
+  var digits = new RegExp("\\d+");
+  show(digits.test("101"));
