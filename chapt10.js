@@ -18,3 +18,7 @@ var story =
   show(/^a+$/.test("blah"));
 
   test method returns a boolean
+
+  var parenthesizedText = /\(.*\)/;
+  show("Its (the sloth's) claws were gigantic!".search(parenthesizedText));
+
