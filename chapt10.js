@@ -53,3 +53,4 @@ function extractDate(string) {
 			    }
 
 show(extractDate("born 5/2/2007 (mother Noog): Long-ear Johnson"));
+alert("Borobudur".replace(/[ou]/g, "a"));
