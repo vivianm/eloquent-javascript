@@ -85,3 +85,14 @@ function escapeHTML(text) {
 				}
 
 	alert(escapeHTML("The 'pre-formatted' tag is written \"<pre>\"."));
+
+
+
+var badWords = ["ape", "monkey", "simian", "gorilla", "evolution"];
+var pattern = new RegExp(badWords.join("|"), "i");
+function isAcceptable(text) {
+  return !pattern.test(text);
+  }
+
+  show(isAcceptable("Mmmm, grapes."));
+  show(isAcceptable("No more of that monkeybusiness, now."));
