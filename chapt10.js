@@ -54,3 +54,6 @@ function extractDate(string) {
 
 show(extractDate("born 5/2/2007 (mother Noog): Long-ear Johnson"));
 alert("Borobudur".replace(/[ou]/g, "a"));
+
+var names = "Picasso, Pablo\nGauguin, Paul\nVan Gogh, Vincent";
+alert(names.replace(/([\w ]+), ([\w ]+)/g, "$2 $1"));
