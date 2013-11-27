@@ -9,3 +9,7 @@ console.log(timeWriter);
 var time = viewHTML(timeWriter);
 
 time.close();
+
+var encoded = encodeURIComponent("aztec empire");
+console.log(encoded);
+console.log(decodeURIComponent(encoded));
