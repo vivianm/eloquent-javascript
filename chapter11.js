@@ -19,3 +19,7 @@ attach(form);
 console.log(document.location.href);
 console.log(document.title);
 show(form);
+
+var userForm = document.forms.userinfo;
+console.log(userForm.method);
+console.log(userForm.action);
