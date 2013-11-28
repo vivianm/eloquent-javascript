@@ -14,3 +14,5 @@ var encoded = encodeURIComponent("aztec empire");
 console.log(encoded);
 console.log(decodeURIComponent(encoded));
 var form = window.open("info.html");
+
+attach(form);
