@@ -41,3 +41,5 @@ if (validInfo(userForm))
           console.log("Give us a name and a valid e-mail address!");
 
   };
+
+userForm.elements.name.focus();  
