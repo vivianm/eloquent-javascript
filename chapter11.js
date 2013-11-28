@@ -23,3 +23,6 @@ show(form);
 var userForm = document.forms.userinfo;
 console.log(userForm.method);
 console.log(userForm.action);
+
+var nameField = userForm.elements.name;
+nameField.value = "EugÎáÎéÎıne";
