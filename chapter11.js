@@ -45,3 +45,5 @@ if (validInfo(userForm))
 userForm.elements.name.focus();
 
 detach();
+
+form.close()
