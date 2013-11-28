@@ -33,3 +33,7 @@ function validInfo(form) {
       }
 
       console.log(validInfo(document.forms.userinfo));
+
+userForm.elements.send.onclick = function() {
+  console.log("Click.");
+  };
