@@ -42,4 +42,6 @@ if (validInfo(userForm))
 
   };
 
-userForm.elements.name.focus();  
+userForm.elements.name.focus();
+
+detach();
