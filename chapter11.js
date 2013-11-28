@@ -16,3 +16,5 @@ console.log(decodeURIComponent(encoded));
 var form = window.open("info.html");
 
 attach(form);
+console.log(document.location.href);
+console.log(document.title);
