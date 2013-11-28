@@ -47,3 +47,7 @@ userForm.elements.name.focus();
 detach();
 
 form.close()
+
+forEachIn(navigator, function(name, value) {
+  console.log(name, " = ", value);
+  });
