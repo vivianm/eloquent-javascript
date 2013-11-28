@@ -35,5 +35,9 @@ function validInfo(form) {
       console.log(validInfo(document.forms.userinfo));
 
 userForm.elements.send.onclick = function() {
-  console.log("Click.");
+if (validInfo(userForm))
+    userForm.submit();
+      else
+          console.log("Give us a name and a valid e-mail address!");
+
   };
