@@ -104,3 +104,6 @@ dom("P", null, "A paragraph with a ",
 
 var link = newParagraph.childNodes[1];
 newParagraph.insertBefore(dom("STRONG", null, "great "), link);
+
+newParagraph.replaceChild(document.createTextNode("lousy "),
+                          newParagraph.childNodes[1]);
