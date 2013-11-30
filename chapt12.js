@@ -11,4 +11,5 @@ function isTextNode(node) {
 
   console.log(isTextNode(document.body));
   console.log(isTextNode(document.body.firstChild.firstChild));
-console.log(document.body.firstChild.nodeName);  
+console.log(document.body.firstChild.nodeName);
+console.log(document.body.firstChild.firstChild.nodeValue);
