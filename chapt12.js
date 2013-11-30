@@ -57,3 +57,8 @@ var secondTitle = document.createTextNode("Chapter 2: Deep magic");
 
 secondHeader.appendChild(secondTitle);
 document.body.appendChild(secondHeader);
+
+var newImage = document.createElement("IMG");
+newImage.setAttribute("src", "img/Hiva Oa.png");
+document.body.appendChild(newImage);
+console.log(newImage.getAttribute("src"));
