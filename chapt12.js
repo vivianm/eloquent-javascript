@@ -43,3 +43,8 @@ document.body.firstChild.firstChild.nodeValue =
 var picture = document.getElementById("picture");
 console.log(picture.src);
 picture.src = "img/ostrich.png";
+
+function $(id) {
+  return document.getElementById(id);
+  }
+  console.log($("picture"));
