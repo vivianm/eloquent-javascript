@@ -33,4 +33,7 @@ function asHTML(node) {
 
 					console.log(asHTML(document.body));
 
-console.log(document.body.innerHTML);					
+console.log(document.body.innerHTML);
+
+document.body.firstChild.firstChild.nodeValue =
+  "Chapter 1: The deep significance of the bottle";
