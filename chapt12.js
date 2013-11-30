@@ -62,3 +62,17 @@ var newImage = document.createElement("IMG");
 newImage.setAttribute("src", "img/Hiva Oa.png");
 document.body.appendChild(newImage);
 console.log(newImage.getAttribute("src"));
+
+
+function setNodeAttribute(node, attribute, value) {
+  if (attribute == "class")
+      node.className = value;
+        else if (attribute == "checked")
+	    node.defaultChecked = value;
+	      else if (attribute == "for")
+	          node.htmlFor = value;
+		    else if (attribute == "style")
+		        node.style.cssText = value;
+			  else
+			      node.setAttribute(attribute, value);
+			      }
