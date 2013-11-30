@@ -13,3 +13,9 @@ function isTextNode(node) {
   console.log(isTextNode(document.body.firstChild.firstChild));
 console.log(document.body.firstChild.nodeName);
 console.log(document.body.firstChild.firstChild.nodeValue);
+
+function isImage(node) {
+  return !isTextNode(node) && node.nodeName == "IMG";
+  }
+
+  console.log(isImage(document.body.lastChild));
