@@ -39,3 +39,7 @@ document.body.firstChild.firstChild.nodeValue =
   "Chapter 1: The deep significance of the bottle";
   document.body.firstChild.innerHTML =
     "Did you know the 'blink' tag yet? <blink>Joy!</blink>";
+
+var picture = document.getElementById("picture");
+console.log(picture.src);
+picture.src = "img/ostrich.png";
