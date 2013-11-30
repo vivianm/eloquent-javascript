@@ -32,3 +32,5 @@ function asHTML(node) {
 					}
 
 					console.log(asHTML(document.body));
+
+console.log(document.body.innerHTML);					
