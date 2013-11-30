@@ -100,3 +100,7 @@ dom("P", null, "A paragraph with a ",
 		link"),
 		" inside of it.");
 		document.body.appendChild(newParagraph);
+
+
+var link = newParagraph.childNodes[1];
+newParagraph.insertBefore(dom("STRONG", null, "great "), link);
