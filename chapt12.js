@@ -48,3 +48,5 @@ function $(id) {
   return document.getElementById(id);
   }
   console.log($("picture"));
+
+console.log(document.body.getElementsByTagName("BLINK")[0]);  
