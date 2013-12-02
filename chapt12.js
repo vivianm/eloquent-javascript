@@ -160,4 +160,7 @@ var spin = setInterval(function() {
       $("picture").style.top = (100 + 100 * Math.sin(angle)) + "px";
       }, 100);
 
-   clearInterval(spin);   
+   clearInterval(spin);
+
+   $("picture").style.width = "400px";
+   $("picture").style.height = "200px";
