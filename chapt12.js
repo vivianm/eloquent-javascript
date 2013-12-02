@@ -159,3 +159,5 @@ var spin = setInterval(function() {
     $("picture").style.left = (100 + 100 * Math.cos(angle)) + "px";
       $("picture").style.top = (100 + 100 * Math.sin(angle)) + "px";
       }, 100);
+
+   clearInterval(spin);   
