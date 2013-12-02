@@ -116,3 +116,8 @@ function removeElement(node) {
       }
 
       removeElement(newParagraph);
+
+ makeTable([{Tree: "Apple", Flowers: "White"},
+            {Tree: "Coral", Flowers: "Red"},
+	               {Tree: "Pine",  Flowers: "None"}],
+		                 ["Tree", "Flowers"]);
