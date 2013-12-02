@@ -164,3 +164,7 @@ var spin = setInterval(function() {
 
    $("picture").style.width = "400px";
    $("picture").style.height = "200px";
+console.log("Outer size: ", $("picture").offsetWidth,
+      " by ", $("picture").offsetHeight, " pixels.");
+      console.log("Inner size: ", $("picture").clientWidth,
+            " by ", $("picture").clientHeight, " pixels.");
