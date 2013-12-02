@@ -144,3 +144,6 @@ function makeTable(data, columns) {
 		var table = makeTable(document.body.childNodes,
 					     ["nodeType", "tagName"]);
 				document.body.appendChild(table);
+
+setNodeAttribute($("picture"), "style",
+                 "border-width: 4px; border-style: solid;");
