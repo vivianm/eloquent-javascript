@@ -147,3 +147,6 @@ function makeTable(data, columns) {
 
 setNodeAttribute($("picture"), "style",
                  "border-width: 4px; border-style: solid;");
+
+$("picture").style.borderColor = "green";
+console.log($("picture").style.borderColor);
