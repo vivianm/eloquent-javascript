@@ -151,3 +151,11 @@ setNodeAttribute($("picture"), "style",
 $("picture").style.borderColor = "green";
 console.log($("picture").style.borderColor);
 $("picture").style.display = "none";
+
+$("picture").style.position = "absolute";
+var angle = 0;
+var spin = setInterval(function() {
+  angle += 0.1;
+    $("picture").style.left = (100 + 100 * Math.cos(angle)) + "px";
+      $("picture").style.top = (100 + 100 * Math.sin(angle)) + "px";
+      }, 100);
