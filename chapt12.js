@@ -150,3 +150,4 @@ setNodeAttribute($("picture"), "style",
 
 $("picture").style.borderColor = "green";
 console.log($("picture").style.borderColor);
+$("picture").style.display = "none";
