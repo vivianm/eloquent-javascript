@@ -55,4 +55,11 @@ function reportClick(event) {
 			      }
 			 registerEventHandler(document, "click", reportClick);
 
-unregisterEventHandler(document, "click", reportClick);			 
+unregisterEventHandler(document, "click", reportClick);
+
+function printKeyCode(event) {
+  event = event || window.event;
+    print("Key ", event.keyCode, " was pressed.");
+    }
+
+    registerEventHandler($("textfield"), "keydown", printKeyCode);
