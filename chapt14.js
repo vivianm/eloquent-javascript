@@ -18,3 +18,7 @@ request.send(null);
 console.log(request.responseText);
 console.log(request.getAllResponseHeaders());
 show(request.getResponseHeader("Last-Modified"));
+request.open("GET", "files/fruit.xml", true);
+request.send(null);
+show(request.responseText);
+console.log(request.responseText);
