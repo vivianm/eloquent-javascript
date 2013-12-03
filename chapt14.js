@@ -10,3 +10,9 @@ function makeHttpObject() {
 	      }
 
 	      console.log(typeof(makeHttpObject()));
+
+
+var request = makeHttpObject();
+request.open("GET", "files/fruit.txt", false);
+request.send(null);
+console.log(request.responseText);
