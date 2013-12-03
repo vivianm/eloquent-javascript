@@ -31,3 +31,9 @@ function unregisterEventHandler(node, event, handler) {
         else
 	    node.detachEvent("on" + event, handler);
 	    }
+
+function showEvent(event) {
+  show(event || window.event);
+  }
+
+  registerEventHandler($("textfield"), "keypress", showEvent);
