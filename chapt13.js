@@ -37,3 +37,5 @@ function showEvent(event) {
   }
 
   registerEventHandler($("textfield"), "keypress", showEvent);
+ 
+unregisterEventHandler($("textfield"), "keypress", showEvent); 
