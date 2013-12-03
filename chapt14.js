@@ -16,3 +16,5 @@ var request = makeHttpObject();
 request.open("GET", "files/fruit.txt", false);
 request.send(null);
 console.log(request.responseText);
+console.log(request.getAllResponseHeaders());
+show(request.getResponseHeader("Last-Modified"));
