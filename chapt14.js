@@ -22,3 +22,10 @@ request.open("GET", "files/fruit.xml", true);
 request.send(null);
 show(request.responseText);
 console.log(request.responseText);
+
+request.open("GET", "files/fruit.xml", true);
+request.send(null);
+request.onreadystatechange = function() {
+  if (request.readyState == 4)
+      show(request.responseText.length);
+      };
