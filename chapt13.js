@@ -64,4 +64,18 @@ function printKeyCode(event) {
 
     registerEventHandler($("textfield"), "keydown", printKeyCode);
 
- unregisterEventHandler($("textfield"), "keydown", printKeyCode);   
+ unregisterEventHandler($("textfield"), "keydown", printKeyCode);
+
+ function printCharacter(event) {
+   event = event || window.event;
+     var charCode = event.charCode;
+       if (charCode == undefined || charCode === 0)
+           charCode = event.keyCode;
+	     print("Character '", String.fromCharCode(charCode), "'");
+	     }
+
+	     registerEventHandler($("textfield"), "keypress", printCharacter);
+
+	     unregisterEventHandler($("textfield"), "keypress", printCharacter);
+
+
