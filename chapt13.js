@@ -63,3 +63,5 @@ function printKeyCode(event) {
     }
 
     registerEventHandler($("textfield"), "keydown", printKeyCode);
+
+ unregisterEventHandler($("textfield"), "keydown", printKeyCode);   
