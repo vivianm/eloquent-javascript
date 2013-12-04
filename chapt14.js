@@ -107,3 +107,9 @@ function serializeJSON(value) {
 															      }
 
 											 simpleHttpRequest("files/fruit.txt", console.log);
+
+
+										do {
+										  var answer = prompt("Say 'moo'.", "");
+										    console.log("You said '", answer, "'.");
+										    } while (answer != "moo");
