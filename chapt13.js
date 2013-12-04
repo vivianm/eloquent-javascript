@@ -225,3 +225,16 @@ var SokobanField = {
 
 																							 var testField = SokobanField.create(sokobanLevels[0]);
 																						 show(testField.getSquare(new Point(10, 2)).content);
+
+
+
+																				SokobanField.place = function(where) {
+																				  where.appendChild(this.score);
+																				    where.appendChild(this.table);
+																				    };
+																				    SokobanField.remove = function() {
+																				      removeElement(this.score);
+																				        removeElement(this.table);
+																					};
+
+																					testField.place(document.body);
