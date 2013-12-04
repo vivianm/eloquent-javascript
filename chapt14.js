@@ -32,3 +32,11 @@ request.onreadystatechange = function() {
 
 var catalog = request.responseXML.documentElement;
 console.log(catalog.childNodes.length);
+
+
+request.open("GET", "files/fruit.json", true);
+request.send(null);
+request.onreadystatechange = function() {
+  if (request.readyState == 4)
+      console.log(request.responseText);
+      };
