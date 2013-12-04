@@ -169,3 +169,14 @@ if (event.charCode === 0 || event.charCode == undefined)
 																							var testSquare = Square.create("@", dom("TD"));
 																						 show(testSquare.hasPlayer());
 
+
+
+Square.moveContent = function(target) {
+  target.content = this.content;
+    this.content = null;
+      target.tableCell.appendChild(this.tableCell.lastChild);
+      };
+      Square.clearContent = function() {
+        this.content = null;
+	  removeElement(this.tableCell.lastChild);
+	  };
