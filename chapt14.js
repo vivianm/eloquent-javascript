@@ -152,3 +152,14 @@ function serializeJSON(value) {
 																	      }
 
 													 weatherAdvice("sunny");
+
+
+										var scope = "outside";
+										var object = {name: "Ignatius", scope: "inside"};
+										with(object) {
+										  console.log("Name == ", name, ", scope == ", scope);
+										    name = "Raoul";
+										      var newVariable = 49;
+										      }
+										      console.log(object.name);
+										      console.log(newVariable);
