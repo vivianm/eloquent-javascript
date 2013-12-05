@@ -371,3 +371,9 @@ addHandler($("textfield"), "focus", function(event) {
   addHandler($("textfield"), "blur", function(event) {
     event.target.style.backgroundColor = "";
     });
+
+
+addHandler($("textfield"), "change", function(event) {
+  console.log("Content of text field changed to '",
+          event.target.value, "'.");
+	  });
