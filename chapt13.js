@@ -381,3 +381,9 @@ addHandler($("textfield"), "change", function(event) {
 
 var jsObject = {link: document.body};
 document.body.linkBack = jsObject;
+
+function addAlerter(element) {
+  addHandler(element, "click", function() {
+      alert("Alert! ALERT!");
+        });
+	}
