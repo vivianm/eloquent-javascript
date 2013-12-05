@@ -264,3 +264,13 @@ var SokobanField = {
 																								 this.playerPos = targetPos;
 																													    }
 																													    };
+
+
+
+																				
+
+
+
+testField.move(new Point(-1, 0));
+testField.move(new Point(-1, 0));
+																				
