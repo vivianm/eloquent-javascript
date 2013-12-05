@@ -377,3 +377,7 @@ addHandler($("textfield"), "change", function(event) {
   console.log("Content of text field changed to '",
           event.target.value, "'.");
 	  });
+
+
+var jsObject = {link: document.body};
+document.body.linkBack = jsObject;
