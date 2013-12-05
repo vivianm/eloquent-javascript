@@ -314,3 +314,11 @@ var SokobanGame = {
 	
 
 var sokoban = SokobanGame.create(document.body);
+
+
+var arrowKeyCodes = new Dictionary({
+  37: new Point(-1, 0), // left
+    38: new Point(0, -1), // up
+      39: new Point(1, 0),  // right
+        40: new Point(0, 1)   // down
+	});
