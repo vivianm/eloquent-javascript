@@ -361,4 +361,13 @@ Square.clearContent = function() {
 				        }
 					  }, 70);
 					  };
-									        
+					
+
+
+
+addHandler($("textfield"), "focus", function(event) {
+  event.target.style.backgroundColor = "yellow";
+  });
+  addHandler($("textfield"), "blur", function(event) {
+    event.target.style.backgroundColor = "";
+    });
