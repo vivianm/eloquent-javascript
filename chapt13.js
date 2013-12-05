@@ -273,4 +273,6 @@ var SokobanField = {
 
 testField.move(new Point(-1, 0));
 testField.move(new Point(-1, 0));
+
+testField.remove();
 																				
