@@ -387,3 +387,10 @@ function addAlerter(element) {
       alert("Alert! ALERT!");
         });
 	}
+
+function addAlerter(element) {
+  addHandler(element, "click", function() {
+      alert("Alert! ALERT!");
+        });
+	  element = null;
+	  }
