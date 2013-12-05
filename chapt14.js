@@ -29,7 +29,7 @@ request.onreadystatechange = function() {
   if (request.readyState == 4)
       console.log(request.responseText.length);
       };
-
+ HEAD
 var catalog = request.responseXML.documentElement;
 console.log(catalog.childNodes.length);
 
@@ -279,3 +279,11 @@ function serializeJSON(value) {
 																																																																							        }
 																																																																								  }
 																																																																								  };
+var heap = new BinaryHeap(function(x){return x;});
+forEach([10, 3, 4, 8, 2, 9, 7, 1, 2, 6, 5],
+        method(heap, "push"));
+
+	heap.remove(2);
+	while (heap.size() > 0)
+	  console.log(heap.pop());
+ chapter14
