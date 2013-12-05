@@ -283,6 +283,8 @@ var SokobanGame = {
 
 	      var newGame = dom("BUTTON", null, "New game");
 	          addHandler(newGame, "click", method(this, "newGame"));
+
+	
 		      var reset = dom("BUTTON", null, "Reset level");
 		          addHandler(reset, "click", method(this, "reset"));
 			      this.container = dom("DIV", null,
@@ -309,4 +311,6 @@ var SokobanGame = {
 																      // To be filled in
 																        }
 																	};
-																				
+	
+
+var sokoban = SokobanGame.create(document.body);
