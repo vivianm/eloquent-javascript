@@ -264,3 +264,133 @@ var SokobanField = {
 																								 this.playerPos = targetPos;
 																													    }
 																													    };
+
+
+
+																				
+
+
+
+testField.move(new Point(-1, 0));
+testField.move(new Point(-1, 0));
+
+testField.remove();
+
+var SokobanGame = {
+  construct: function(place) {
+      this.level = null;
+          this.field = null;
+
+	      var newGame = dom("BUTTON", null, "New game");
+	          addHandler(newGame, "click", method(this, "newGame"));
+
+	
+		      var reset = dom("BUTTON", null, "Reset level");
+		          addHandler(reset, "click", method(this, "reset"));
+			      this.container = dom("DIV", null,
+			                               dom("H1", null, "Sokoban"),
+						                                dom("DIV", null, newGame, " ", reset));
+										    place.appendChild(this.container);
+
+										        addHandler(document, "keydown", method(this, "keyDown"));
+											    this.newGame();
+											      },
+
+											        newGame: function() {
+												    this.level = 0;
+												        this.reset();
+													  },
+													    reset: function() {
+													        if (this.field)
+														      this.field.remove();
+											 this.field = SokobanField.create(sokobanLevels[this.level]);
+															      this.field.place(this.container);
+															        },
+
+																  keyDown: function(event) {
+																      // To be filled in
+																        }
+																	};
+	
+
+var sokoban = SokobanGame.create(document.body);
+
+
+var arrowKeyCodes = new Dictionary({
+  37: new Point(-1, 0), // left
+    38: new Point(0, -1), // up
+      39: new Point(1, 0),  // right
+        40: new Point(0, 1)   // down
+	});
+
+
+
+SokobanGame.keyDown = function(event) {
+  if (arrowKeyCodes.contains(event.keyCode)) {
+      event.stop();
+          this.field.move(arrowKeyCodes.lookup(event.keyCode));
+	      if (this.field.won()) {
+	            if (this.level < sokobanLevels.length - 1) {
+		            alert("Excellent! Going to the next level.");
+			            this.level++;
+				            this.reset();
+					          }
+						        else {
+				alert("You win! Game over.");
+					this.newGame();
+									      }
+									          }
+										    }
+										    };
+
+
+
+Square.clearContent = function() {
+  self.content = null;
+    var image = this.tableCell.lastChild;
+      var size = 100;
+
+        var animate = setInterval(function() {
+	    size -= 10;
+	        image.style.width = size + "%";
+		    image.style.height = size + "%";
+
+		        if (size < 60) {
+			      clearInterval(animate);
+			            removeElement(image);
+				        }
+					  }, 70);
+					  };
+					
+
+
+
+addHandler($("textfield"), "focus", function(event) {
+  event.target.style.backgroundColor = "yellow";
+  });
+  addHandler($("textfield"), "blur", function(event) {
+    event.target.style.backgroundColor = "";
+    });
+
+
+addHandler($("textfield"), "change", function(event) {
+  console.log("Content of text field changed to '",
+          event.target.value, "'.");
+	  });
+
+
+var jsObject = {link: document.body};
+document.body.linkBack = jsObject;
+
+function addAlerter(element) {
+  addHandler(element, "click", function() {
+      alert("Alert! ALERT!");
+        });
+	}
+
+function addAlerter(element) {
+  addHandler(element, "click", function() {
+      alert("Alert! ALERT!");
+        });
+	  element = null;
+	  }
