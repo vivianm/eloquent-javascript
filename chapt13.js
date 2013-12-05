@@ -322,3 +322,23 @@ var arrowKeyCodes = new Dictionary({
       39: new Point(1, 0),  // right
         40: new Point(0, 1)   // down
 	});
+
+
+
+SokobanGame.keyDown = function(event) {
+  if (arrowKeyCodes.contains(event.keyCode)) {
+      event.stop();
+          this.field.move(arrowKeyCodes.lookup(event.keyCode));
+	      if (this.field.won()) {
+	            if (this.level < sokobanLevels.length - 1) {
+		            alert("Excellent! Going to the next level.");
+			            this.level++;
+				            this.reset();
+					          }
+						        else {
+				alert("You win! Game over.");
+					this.newGame();
+									      }
+									          }
+										    }
+										    };
